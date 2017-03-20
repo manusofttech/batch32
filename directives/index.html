@@ -7,6 +7,15 @@
 		<div ng-controller="myCtrl">
 			<h1 ng-repeat="i in marks">{{i}}</h1>
 			<h1 ng-repeat="i in cricketers">{{i.name}}-{{i.age}}</h1>
+			
+			<h1 ng-repeat="j in marks">{{$index}}-{{j}}</h1>
+			<table border="3px">
+				<tr><th>SNo.</th><th>Name</th></tr>
+				<tr ng-repeat="x in marks">
+					<td>{{$index+1}}</td>
+					<td>{{x}}</td>
+				</tr>
+			</table>
 		</div>		
 </div>
 
